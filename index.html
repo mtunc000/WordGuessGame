@@ -3,57 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-        
-    </title>
+    <title>Hang Man</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css
-    " />
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  
 </head>
 <body>
+    <div class="card">
+        <img class="card-img-top" src="assets/images/hangman.jpg" alt="Card image cap">
 
-        <ul class="scores">
-                <li>Wins : <span class='wins'></span></li>
-                <li>Losses : <span class='losses'></span></li>
-         </ul>
-    
-<script>
+      <header>
+          <h1> Hang Man</h1>
 
-let basic= ["cat","dog", "bunny","parrot", "mouse", "sheep"]
+      </header>
 
-let medium = ["Mona Lisa","Chris Rock", "Giraffe","Hang man", "bookshelf"];
+      <div class="scores">
+           <div class='wins'>Wins</div>
+           <div class='losses'>Losses</div>
+       </div>
 
-let hard = ["crocodile", "umbrella", "ticonderogo", "Locust Bean Gum",]
-
-let wins = 0;
-let loses = 0;
-
-document.addEventListener('keyup', function(e){
-          let options = ["b", "m", "h"];
-          let Level = {
-            hardness : {
-              basic: "b",
-              medium: "m",
-              hard : "h",
-            },
+        <div class: "container">
             
-          }
+              <div class="lines">Lines</div>
 
-          let char = hardness[event.which];
+              <div class="correctLetter">CorrectLetter</div>
 
-          if( options.includes(char.char) ){
-            let computerRand = options[Math.floor(Math.random() * options.length)];
-            for(let i=0; i<     ; i++)
+              <div class="wrongLetter"> WrongLetter</div>
+              
+              <button class="reset" > Reset</button>
 
-
-            document.querySelector(".wins").innerHTML = wins;
-          document.querySelector(".losses").innerHTML = losses;
-          
-        })
-
-</script>
-
+            
+    
+        </div>
+         <script src="assets/javascript/game.js"></script>
 </body>
 </html>
